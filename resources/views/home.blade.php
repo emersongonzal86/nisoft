@@ -1,6 +1,8 @@
 @extends('layout')
 @section('content')
-    <body class='fondo'>
 
+@include('partials/success')
+
+    <body class='fondo'>
 @endsection
 

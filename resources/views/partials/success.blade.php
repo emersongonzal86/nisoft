@@ -1,5 +1,8 @@
 @if(Session::has('alert'))
-    <p class="alert alert-success">
+
+    <div class="pull-right">
+    <p class="alert alert-info">
         {{ Session::get('alert') }}
     </p>
+    </div>
 @endif

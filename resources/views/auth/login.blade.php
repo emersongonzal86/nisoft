@@ -1,21 +1,15 @@
 @extends('layout')
+
 @section('content')
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
+                <p>  @include('partials/errors')</p>
+                <p>@include('partials/success')</p>
                 <div class="panel panel-default">
                     <div class="panel-heading">@lang('auth.login_title')</div>
                     <div class="panel-body">
-                        @include('partials/errors')
-
-                        @if(Session::has('alert'))
-                            <p class="alert alert-success">
-                                {{Session::get('alert')}}
-                            </p>
-
-                            @endif
-
-                        <form class="form-horizontal" role="form" method="POST" action="{{route('login')}}">
+                      <form class="form-horizontal" role="form" method="POST" action="{{route('login')}}">
                             <input type="hidden" name="_token" value="{{ csrf_token() }}">
 
                             <div class="form-group">
