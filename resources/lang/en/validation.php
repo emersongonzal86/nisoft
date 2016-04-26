@@ -111,6 +111,7 @@ return [
         'current_password' => 'Current password',
         'change_password' => 'Change Password',
         'password_confirmation'  => 'Confirm your password',
+        'Your_password_has_been_changed' => 'Your password has been changed',
         'username' =>'User Name ',
         'forgot_link'=>'Forgot your password?',
     ],
