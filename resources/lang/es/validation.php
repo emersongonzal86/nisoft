@@ -110,6 +110,8 @@ return [
         'name'     =>'Nombre Completo',
         'email'    =>'Correo Electrónico',
         'password' =>'Contraseña',
+        'current_password' => 'Contraseña actual',
+        'change_password' => 'Cambiar Contraseña',
         'password_confirmation'  => 'Confirma tu contraseña',
         'username' => 'Nombre de Usuario',
         'forgot_link'=>'Olvidaste la contraseña?',

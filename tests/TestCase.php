@@ -22,4 +22,18 @@ class TestCase extends Illuminate\Foundation\Testing\TestCase
 
         return $app;
     }
+
+    public function createUser($role='user'){
+
+        return factory(App\User::class)->create([
+            'name'=>'emerson',
+            'username'=> 'egonzalez',
+            'email'=>'emersongonzal86@gmail.com',
+            'role'=>$role ,
+            'password'=> bcrypt('emer1215'),
+            'active'=>true
+
+        ]);
+    }
+
 }

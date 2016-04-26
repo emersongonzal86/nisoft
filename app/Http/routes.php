@@ -55,6 +55,10 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('account', function () {
         return view('account');
     });
+
+    Route::get('account/password','AccountController@getPassword');
+    Route::post('account/password','AccountController@postPassword');
+
     Route::group(['middleware' => 'verified'], function () {
         Route::get('publish', function () {
             return view('publish');
@@ -64,3 +68,5 @@ Route::group(['middleware' => 'auth'], function () {
         });
     });
 });
+
+Route::resource('users','UsersController');

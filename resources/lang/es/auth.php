@@ -14,7 +14,7 @@ return [
     */
 
     'failed' => 'Las credenciales suministradas no coinciden con nuestros registros',
-    'throttle' => 'Demasiados intentos. Porfavor intente de nuevo en :seconds seconds.',
+    'throttle' => 'Demasiados intentos fallidos. Porfavor intente de nuevo en :seconds segundos.',
     'login_title'      => 'Inicio de sesion',
     'login_button'     => 'Inicia sesion',
     'register_title'   => 'Registro',

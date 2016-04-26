@@ -108,6 +108,8 @@ return [
         'name' => 'name',
         'email' =>'E-mail',
         'password' => 'Contraseña',
+        'current_password' => 'Current password',
+        'change_password' => 'Change Password',
         'password_confirmation'  => 'Confirm your password',
         'username' =>'User Name ',
         'forgot_link'=>'Forgot your password?',
